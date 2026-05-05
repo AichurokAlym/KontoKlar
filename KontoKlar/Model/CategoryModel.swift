@@ -10,6 +10,10 @@ final class Category {
     var color: String
     var type: CategoryType
     @Relationship(deleteRule: .cascade, inverse: \TransactionItem.category) var transactions: [TransactionItem]
+
+    var localizedName: String {
+        NSLocalizedString(name, comment: name)
+    }
     
     init(
         id: UUID = UUID(),

@@ -79,7 +79,7 @@ struct HomeView: View {
                             if viewModel.monthlyBudget > 0 {
                                 VStack(alignment: .leading, spacing: 6) {
                                     HStack {
-                                        Text("Monthly budget")
+                                        Text(NSLocalizedString("Monthly budget", comment: ""))
                                             .font(.caption).textCase(.uppercase)
                                             .foregroundColor(Color(.gray))
                                         Spacer()
@@ -94,7 +94,7 @@ struct HomeView: View {
                             if viewModel.savingsGoal > 0 {
                                 VStack(alignment: .leading, spacing: 6) {
                                     HStack {
-                                        Text("Savings goal")
+                                        Text(NSLocalizedString("Savings goal", comment: ""))
                                             .font(.caption).textCase(.uppercase)
                                             .foregroundColor(Color(.gray))
                                         Spacer()
@@ -113,7 +113,7 @@ struct HomeView: View {
                         .padding(.bottom, 6)
                     }
                     
-                    Picker("Тип", selection: $viewModel.selectedCategoryType) {
+                    Picker(NSLocalizedString("Type", comment: ""), selection: $viewModel.selectedCategoryType) {
                         ForEach(CategoryType.allCases, id: \.self) { type in
                             Text(type.localizedName())
                         }
@@ -137,7 +137,7 @@ struct HomeView: View {
                                 Button {
                                     viewModel.openCategoryTransactions(category: category)
                                 } label: {
-                                    CategoryItemView(categoryColor: category.color, categoryIcon: category.icon, categoryName: category.name, totalAmount: totalAmount, currencySymbol: appVM.currencySymbol)
+                                    CategoryItemView(categoryColor: category.color, categoryIcon: category.icon, categoryName: category.localizedName, totalAmount: totalAmount, currencySymbol: appVM.currencySymbol)
                                 }
                             }
                         }
@@ -174,7 +174,7 @@ struct HomeView: View {
                         }
                     }
                     ToolbarItem(placement: .principal) {
-                        Text("KontoKlar")
+                        Text(NSLocalizedString("KontoKlar", comment: ""))
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .foregroundColor(Color("colorBalanceText"))
@@ -195,7 +195,7 @@ struct HomeView: View {
                     if let category = viewModel.categoryForRoute(id: categoryId) {
                         TransactionCategoryView(viewModel: deps.makeTransactionCategoryViewModel(category: category))
                     } else {
-                        Text("Category not found")
+                        Text(NSLocalizedString("Category not found", comment: ""))
                     }
                 }
             }
@@ -206,13 +206,13 @@ struct HomeView: View {
         .sheet(isPresented: $viewModel.showCustomDateRange) {
             NavigationStack {
                 Form {
-                    DatePicker("Start", selection: $viewModel.dateRangeSelection.customStartDate, displayedComponents: .date)
-                    DatePicker("End", selection: $viewModel.dateRangeSelection.customEndDate, displayedComponents: .date)
+                    DatePicker(NSLocalizedString("Start", comment: ""), selection: $viewModel.dateRangeSelection.customStartDate, displayedComponents: .date)
+                    DatePicker(NSLocalizedString("End", comment: ""), selection: $viewModel.dateRangeSelection.customEndDate, displayedComponents: .date)
                 }
-                .navigationTitle("Custom range")
+                .navigationTitle(NSLocalizedString("Custom range", comment: ""))
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button("Done") {
+                        Button(NSLocalizedString("Done", comment: "")) {
                             viewModel.showCustomDateRange = false
                         }
                     }

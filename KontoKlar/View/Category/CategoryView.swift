@@ -28,7 +28,7 @@ struct CategoryView: View {
                                 .frame(width: 30, height: 30)
                                 .background(Color(category.color))
                                 .cornerRadius(7.5)
-                            Text(category.name)
+                            Text(category.localizedName)
                                 .foregroundColor(Color("colorBalanceText"))
                         }
                     }

@@ -106,13 +106,13 @@ struct EditTransactionView: View {
             .padding(.horizontal, 15)
             .padding(.top, 20)
         }
-        .navigationBarTitle("Editing", displayMode: .inline)
+        .navigationBarTitle(NSLocalizedString("Editing", comment: ""), displayMode: .inline)
         .scrollDismissesKeyboard(.interactively)
         .background(Color("colorBG"))
         .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
                 Spacer()
-                Button("Done") {
+                Button(NSLocalizedString("Done", comment: "")) {
                     amountIsFocused = false
                     noteIsFocused = false
                 }
@@ -124,7 +124,7 @@ struct EditTransactionView: View {
                         dismiss()
                     }
                 } label: {
-                    Text("Edit")
+                    Text(NSLocalizedString("Edit", comment: ""))
                 }
             }
         }

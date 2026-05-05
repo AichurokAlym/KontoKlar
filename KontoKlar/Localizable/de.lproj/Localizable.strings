@@ -1,0 +1,157 @@
+// HomeView
+"Balance" = "Saldo";
+"Expense average" = "Ausgaben (Ø)";
+"Income" = "Einnahmen";
+"Expense" = "Ausgaben";
+"Settings" = "Einstellungen";
+
+// AddTransaction
+"Enter amount:" = "Betrag eingeben:";
+"Note" = "Notiz";
+"Enter note:" = "Notiz eingeben:";
+"Category type" = "Kategorie-Typ";
+"Category" = "Kategorie";
+"Purpose:" = "Zweck:";
+"Date" = "Datum";
+"Enter date:" = "Datum eingeben:";
+"Cancel" = "Abbrechen";
+"Add" = "Hinzufügen";
+"Please enter amount" = "Bitte Betrag eingeben";
+"Please select a category" = "Bitte eine Kategorie auswählen";
+"Okay" = "OK";
+"Select a category" = "Kategorie auswählen";
+"Category:" = "Kategorie:";
+"Addendum" = "Zusatz";
+
+// TransactionView
+"Transactions" = "Transaktionen";
+"Back" = "Zurück";
+
+// AddCategoryView
+"New" = "Neu";
+
+// AddCategory
+"Select type:" = "Typ auswählen:";
+"Name" = "Name";
+"Enter Name" = "Name eingeben";
+"Choose an icon:" = "Icon auswählen:";
+"Choose color:" = "Farbe auswählen:";
+"Create a category" = "Kategorie erstellen";
+
+// SettingView
+"Categories" = "Kategorien";
+"Data" = "Daten";
+"Community" = "Community";
+"Write to the developer" = "An Entwickler schreiben";
+"Feedback" = "Feedback";
+"Application" = "App";
+"Currency" = "Währung";
+"Vibration" = "Vibration";
+"App version: 1.1.5" = "App-Version: 1.1.5";
+"App version: 1.1.1" = "App-Version: 1.1.1";
+"Rounding numbers" = "Zahlen runden";
+
+// PreviewCard
+"Welcome" = "Willkommen";
+"Welcome!" = "Willkommen!";
+"The list of transactions is currently empty," = "Die Transaktionsliste ist aktuell leer.";
+"Please add transaction." = "Bitte füge eine Transaktion hinzu.";
+"please add transaction." = "bitte füge eine Transaktion hinzu.";
+"The list of categories is currently empty," = "Die Kategorienliste ist aktuell leer,";
+"please add category." = "bitte füge eine Kategorie hinzu.";
+"There are currently no categories." = "Aktuell gibt es keine Kategorien.";
+"Please add." = "Bitte hinzufügen.";
+
+// DefaultCategories (existing)
+"Car" = "Auto";
+"Bank" = "Bank";
+"Business services" = "Dienstleistungen";
+"Charity" = "Spenden";
+"State" = "Staat";
+"Children" = "Kinder";
+"House" = "Haushalt";
+"Pets" = "Haustiere";
+"Eating out" = "Essen gehen";
+"Health" = "Gesundheit";
+"Beauty" = "Drogerie";
+"Mobile connection" = "Internet & Handy";
+"Education" = "Bildung";
+"Clothing and footwear" = "Kleidung & Schuhe";
+"Present" = "Geschenke";
+"Food" = "Lebensmittel";
+"Trips" = "Reisen";
+"Entertainment" = "Freizeit";
+"Technique" = "Technik";
+"Transport" = "Transport";
+
+"Rent" = "Mieteinnahmen";
+"Exchange" = "Wechsel";
+"Dividends" = "Dividenden";
+"Wage" = "Lohn";
+"Part time job" = "Nebenjob";
+"Interest on accounts" = "Zinsen";
+"Salary" = "Gehalt";
+"Groceries" = "Lebensmittel";
+
+// DefaultCategories (German starter set keys)
+"Rent / Mortgage" = "Miete / Kredit";
+"Utilities" = "Nebenkosten (Strom, Wasser, Heizung)";
+"Internet & Mobile" = "Internet & Handy";
+"Insurance" = "Versicherungen";
+"Subscriptions" = "Abos";
+"Drugstore & Household" = "Drogerie / Haushalt";
+"Public transport" = "ÖPNV";
+"Restaurants & Cafés" = "Restaurants & Cafés";
+"Uncategorized" = "Unkategorisiert";
+"Side job / Freelance" = "Nebenjob / Freelance";
+"Government benefits" = "Staatliche Leistungen";
+"Refunds" = "Rückerstattungen";
+"Other income" = "Sonstiges Einkommen";
+
+// CategoryType
+"Expense" = "Ausgaben";
+"Income" = "Einnahmen";
+
+// WelcomeView
+"KontoKlar" = "KontoKlar";
+"Initial application setup" = "Ersteinrichtung der App";
+"Basic categories" = "Basis-Kategorien";
+"Note: Enabling this feature will create base categories for expenses and income." = "Hinweis: Wenn du diese Funktion aktivierst, werden Basis-Kategorien für Ausgaben und Einnahmen erstellt.";
+"Continue" = "Weiter";
+
+// PickerCategoryView
+"Create category" = "Kategorie erstellen";
+
+// Budget & Goals + Date range picker
+"Budget & Goals" = "Budget & Ziele";
+"Monthly budget" = "Monatsbudget";
+"Savings goal" = "Sparziel";
+"Start" = "Start";
+"End" = "Ende";
+"Custom range" = "Benutzerdefinierter Zeitraum";
+"Custom" = "Benutzerdefiniert";
+"This week" = "Woche";
+"This month" = "Monat";
+"This year" = "Jahr";
+"Done" = "Fertig";
+"Type" = "Typ";
+"New category" = "Neue Kategorie";
+"Category not found" = "Kategorie nicht gefunden";
+"Please enter a category name" = "Bitte einen Kategorienamen eingeben";
+
+// EditTransactionView
+"Editing" = "Bearbeiten";
+"Edit" = "Ändern";
+
+// Persistence (titles + generic fallback)
+"Persistence details label" = "Details";
+"Could not complete operation" = "Vorgang konnte nicht abgeschlossen werden.";
+"Could not load categories" = "Kategorien konnten nicht geladen werden.";
+"Could not load transactions" = "Transaktionen konnten nicht geladen werden.";
+"Could not save transaction" = "Änderungen konnten nicht gespeichert werden.";
+"Could not add category" = "Kategorie konnte nicht hinzugefügt werden.";
+"Could not add transaction" = "Transaktion konnte nicht hinzugefügt werden.";
+"Could not delete category" = "Kategorie konnte nicht gelöscht werden.";
+"Could not delete transactions" = "Eine oder mehrere Transaktionen konnten nicht gelöscht werden.";
+"Could not create starter categories" = "Startkategorien konnten nicht erstellt werden.";
+"Could not load suggested notes" = "Vorgeschlagene Notizen konnten nicht geladen werden.";

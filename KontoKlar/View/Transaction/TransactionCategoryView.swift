@@ -44,7 +44,7 @@ struct TransactionCategoryView: View {
                                                 }
                                                 Spacer()
                                                 HStack {
-                                                    Text(vm.category.name)
+                                                    Text(vm.category.localizedName)
                                                         .foregroundColor(Color("colorBalanceText")).textCase(.uppercase)
                                                         .font(.caption)
                                                         .multilineTextAlignment(.trailing)
@@ -85,7 +85,7 @@ struct TransactionCategoryView: View {
                 }
             }
         }
-        .navigationTitle(vm.category.name)
+        .navigationTitle(vm.category.localizedName)
         .onDisappear {
             transactionStore.reload()
             categoryStore.reload()

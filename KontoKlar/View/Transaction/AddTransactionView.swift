@@ -161,7 +161,7 @@ struct AddTransactionView: View {
                     
                     Section {
                         HStack {
-                            DatePicker("Date", selection: $vm.date, displayedComponents: .date)
+                            DatePicker(NSLocalizedString("Date", comment: ""), selection: $vm.date, displayedComponents: .date)
                         }
                         .pickerStyle(SegmentedPickerStyle())
                         .padding()
@@ -169,7 +169,7 @@ struct AddTransactionView: View {
                         .background(Color("colorBalanceBG"))
                         .cornerRadius(10)
                     } header: {
-                        Text("Enter date:")
+                        Text(NSLocalizedString("Enter date:", comment: ""))
                             .font(.caption).textCase(.uppercase)
                             .padding(.leading, 10)
                             .padding(.top, 10)
@@ -181,11 +181,11 @@ struct AddTransactionView: View {
             }
             .scrollDismissesKeyboard(.interactively)
             .background(Color("colorBG"))
-            .navigationBarTitle("Addendum", displayMode: .inline)
+            .navigationBarTitle(NSLocalizedString("Addendum", comment: ""), displayMode: .inline)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
-                    Button("Done") {
+                    Button(NSLocalizedString("Done", comment: "")) {
                         amountIsFocused = false
                         noteIsFocused = false
                     }
@@ -195,7 +195,7 @@ struct AddTransactionView: View {
                         playFeedbackHaptic(appVM.selectedFeedbackHaptic)
                         dismiss()
                     } label: {
-                        Text("Cancel")
+                        Text(NSLocalizedString("Cancel", comment: ""))
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -206,13 +206,13 @@ struct AddTransactionView: View {
                             dismiss()
                         }
                     } label: {
-                        Text("Add")
+                        Text(NSLocalizedString("Add", comment: ""))
                     }
-                    .alert("Please select a category", isPresented: $vm.alertCategory) {
-                        Button("Okay", role: .cancel) { }
+                    .alert(NSLocalizedString("Please select a category", comment: ""), isPresented: $vm.alertCategory) {
+                        Button(NSLocalizedString("Okay", comment: ""), role: .cancel) { }
                     }
-                    .alert("Please enter amount", isPresented: $vm.alertAmount) {
-                        Button("Okay", role: .cancel) { }
+                    .alert(NSLocalizedString("Please enter amount", comment: ""), isPresented: $vm.alertAmount) {
+                        Button(NSLocalizedString("Okay", comment: ""), role: .cancel) { }
                     }
                 }
             }

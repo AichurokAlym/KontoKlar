@@ -72,7 +72,7 @@ struct TransactionView: View {
         }
         .scrollContentBackground(.hidden)
         .background(Color("colorBG"))
-        .navigationBarTitle("Transactions", displayMode: .inline)
+        .navigationBarTitle(NSLocalizedString("Transactions", comment: ""), displayMode: .inline)
         .onDisappear {
             // Ensure Home dashboard reflects changes done here (delete/edit).
             transactionStore.reload()
@@ -81,13 +81,13 @@ struct TransactionView: View {
         .sheet(isPresented: $vm.showCustomDateRange) {
             NavigationStack {
                 Form {
-                    DatePicker("Start", selection: $vm.customStartDate, displayedComponents: .date)
-                    DatePicker("End", selection: $vm.customEndDate, displayedComponents: .date)
+                    DatePicker(NSLocalizedString("Start", comment: ""), selection: $vm.customStartDate, displayedComponents: .date)
+                    DatePicker(NSLocalizedString("End", comment: ""), selection: $vm.customEndDate, displayedComponents: .date)
                 }
-                .navigationTitle("Custom range")
+                .navigationTitle(NSLocalizedString("Custom range", comment: ""))
                 .toolbar {
                     ToolbarItem(placement: .navigationBarTrailing) {
-                        Button("Done") {
+                        Button(NSLocalizedString("Done", comment: "")) {
                             vm.showCustomDateRange = false
                         }
                     }
@@ -117,8 +117,7 @@ struct TransactionView: View {
             Text(vm.persistenceFeedback?.localizedMessage ?? "")
         }
     }
-    
-    // Метод для оптимизации отображения списка
+
     @ViewBuilder
     private func transactionRow(transaction: TransactionItem, category: Category) -> some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -141,7 +140,7 @@ struct TransactionView: View {
                         }
                         Spacer()
                         HStack {
-                            Text(category.name)
+                            Text(category.localizedName)
                                 .foregroundColor(Color("colorBalanceText")).textCase(.uppercase)
                                 .font(.caption)
                                 .multilineTextAlignment(.trailing)

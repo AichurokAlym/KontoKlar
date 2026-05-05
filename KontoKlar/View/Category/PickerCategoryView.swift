@@ -61,7 +61,7 @@ struct PickerCategoryView: View {
                                     .cornerRadius(7.5)
                                     .padding(0)
                                 
-                                Text(category.name)
+                                Text(category.localizedName)
                                     .font(.headline)
                                     .fontWeight(.light)
                                     .foregroundColor(Color(Colors.mainText))
@@ -81,7 +81,7 @@ struct PickerCategoryView: View {
             }
         }
         .background(Color(Colors.mainBG))
-        .navigationTitle("Categories")
+        .navigationTitle(NSLocalizedString("Categories", comment: ""))
         .navigationBarTitleDisplayMode(.inline)
         .alert(
             vm.persistenceFeedback?.localizedTitle ?? NSLocalizedString("Could not complete operation", comment: ""),
