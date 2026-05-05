@@ -1,0 +1,126 @@
+// HomeView
+"Balance" = "Balance";
+"Expense average" = "Expense average";
+"Income" = "Income";
+"Expense" = "Expense";
+"Settings" = "Settings";
+
+// AddTransaction
+"Enter amount:" = "Enter amount:";
+"Note" = "Note";
+"Enter note:" = "Enter note:";
+"Category type" = "Category type";
+"Category" = "Category";
+"Purpose:" = "Purpose:";
+"Date" = "Date";
+"Enter date:" = "Enter date:";
+"Cancel" = "Cancel";
+"Add" = "Add";
+"Please enter amount" = "Please enter amount";
+"Please select a category" = "Please select a category";
+"Okay" = "Okay";
+"Select a category" = "Select a category";
+"Category:" = "Category:";
+"Addendum" = "Addendum";
+
+// TransactionView
+"Transactions" = "Transactions";
+"Back" = "Back";
+
+// AddCategoryView
+"Back" = "Back";
+"New" = "New";
+
+// AddCategory
+"Select type:" = "Select type:";
+"Name" = "Name";
+"Enter Name" = "Enter Name";
+"Choose an icon:" = "Choose an icon:";
+"Choose color:" = "Choose color:";
+"Create a category" = "Create a category";
+"Back" = "Back";
+"Add" = "Add";
+
+// SettingView
+"Back" = "Back";
+"Settings" = "Settings";
+"Transactions" = "Transactions";
+"Categories" = "Categories";
+"Data" = "Data";
+"Community" = "Community";
+"Write to the developer" = "Write to the developer";
+"Feedback" = "Feedback";
+"Application" = "Application";
+"Currency" = "Currency";
+"Vibration" = "Vibration";
+"App version: 1.1.5" = "App version: 1.1.5";
+"Rounding numbers" = "Rounding numbers";
+
+//PreviewCard
+"Welcome" = "Welcome!";
+"The list of transactions is currently empty," = "The list of transactions is currently empty,";
+"please add transaction." = "please add transaction.";
+"Welcome" = "Welcome";
+"The list of categories is currently empty," = "The list of categories is currently empty,";
+"please add category." = "please add category.";
+"There are currently no categories." = "There are currently no categories.";
+"Please add." = "Please add.";
+
+// DefaultCategories
+"Car" = "Car";
+"Bank" = "Bank";
+"Business services" = "Business services";
+"Charity" = "Charity";
+"State" = "State";
+"Children" = "Children";
+"House" = "House";
+"Pets" = "Pets";
+"Eating out" = "Eating out";
+"Health" = "Health";
+"Beauty" = "Beauty";
+"Mobile connection" = "Mobile connection";
+"Education" = "Education";
+"Clothing and footwear" = "Clothing and footwear";
+"Present" = "Present";
+"Food" = "Food";
+"Trips" = "Trips";
+"Entertainment" = "Entertainment";
+"Technique" = "Technique";
+"Transport" = "Transport";
+
+"Rent" = "Rent";
+"Exchange" = "Exchange";
+"Dividends" = "Dividends";
+"Wage" = "Wage";
+"Present" = "Present";
+"Part time job" = "Part time job";
+"Interest on accounts" = "Interest on accounts";
+
+// WelcomeView
+"KontoKlar" = "KontoKlar";
+"Currency" = "Currency";
+"Initial application setup" = "Initial application setup:";
+"Basic categories" = "Basic categories";
+"Note: Enabling this feature will create base categories for expenses and income." = "Note: Enabling this feature will create base categories for expenses and income.";
+"Continue" = "Continue";
+
+// PickerCategoryView
+"Categories" = "Categories";
+"Create category" = "Create category";
+
+// EditTransactionView
+"Editing" = "Editing";
+"Edit" = "Edit";
+
+// Persistence (titles + generic fallback)
+"Persistence details label" = "Details";
+"Could not complete operation" = "Could not complete this operation.";
+"Could not load categories" = "Could not load categories.";
+"Could not load transactions" = "Could not load transactions.";
+"Could not save transaction" = "Could not save changes to this transaction.";
+"Could not add category" = "Could not add this category.";
+"Could not add transaction" = "Could not add this transaction.";
+"Could not delete category" = "Could not delete this category.";
+"Could not delete transactions" = "Could not delete one or more transactions.";
+"Could not create starter categories" = "Could not create starter categories.";
+"Could not load suggested notes" = "Could not load suggested notes.";
