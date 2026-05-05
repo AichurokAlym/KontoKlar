@@ -58,14 +58,14 @@ struct SettingView: View {
                     Text("Data")
                 }
                 
-                Section(header: Text("Application")) {
+                Section(header: Text(NSLocalizedString("Application", comment: ""))) {
                     HStack {
                         Text(vm.selectedCurrency.symbol)
                             .foregroundColor(Color("colorBlack"))
                             .frame(width: 30, height: 30)
                             .background(Color("colorBrown1"))
                             .cornerRadius(7.5)
-                        Picker("Currency", selection: $vm.selectedCurrency) {
+                        Picker(NSLocalizedString("Currency", comment: ""), selection: $vm.selectedCurrency) {
                             ForEach(Currency.sortedCases, id: \.self) { currency in
                                 Text(currency.rawValue)
                                     .tag(currency)
@@ -78,7 +78,7 @@ struct SettingView: View {
                             .frame(width: 30, height: 30)
                             .background(Color("colorPurple2"))
                             .cornerRadius(7.5)
-                        Toggle("Vibration", isOn: $appVM.selectedFeedbackHaptic)
+                        Toggle(NSLocalizedString("Vibration", comment: ""), isOn: $appVM.selectedFeedbackHaptic)
                     }
                     
                     HStack {
@@ -87,18 +87,18 @@ struct SettingView: View {
                             .frame(width: 30, height: 30)
                             .background(Color(Colors.colorGreen))
                             .cornerRadius(7.5)
-                        Toggle("Rounding numbers", isOn: $appVM.roundingNumbers)
+                        Toggle(NSLocalizedString("Rounding numbers", comment: ""), isOn: $appVM.roundingNumbers)
                     }
                 }
                 
-                Section(header: Text("Budget & Goals")) {
+                Section(header: Text(NSLocalizedString("Budget & Goals", comment: ""))) {
                     HStack {
                         Image(systemName: "chart.pie")
                             .foregroundColor(Color("colorBlack"))
                             .frame(width: 30, height: 30)
                             .background(Color("colorGray1"))
                             .cornerRadius(7.5)
-                        Text("Monthly budget")
+                        Text(NSLocalizedString("Monthly budget", comment: ""))
                             .foregroundColor(Color("colorBalanceText"))
                         Spacer()
                         TextField("0", value: $appVM.monthlyBudget, formatter: numberFormatter)
@@ -113,7 +113,7 @@ struct SettingView: View {
                             .frame(width: 30, height: 30)
                             .background(Color("colorYellow"))
                             .cornerRadius(7.5)
-                        Text("Savings goal")
+                        Text(NSLocalizedString("Savings goal", comment: ""))
                             .foregroundColor(Color("colorBalanceText"))
                         Spacer()
                         TextField("0", value: $appVM.savingsGoal, formatter: numberFormatter)
@@ -134,7 +134,7 @@ struct SettingView: View {
                                 .frame(width: 30, height: 30)
                                 .background(Color("colorGray1"))
                                 .cornerRadius(7.5)
-                            Text("Write to the developer")
+                            Text(NSLocalizedString("Write to the developer", comment: ""))
                                 .foregroundColor(Color("colorBalanceText"))
                             Spacer()
                             Image(systemName: "chevron.forward")
@@ -143,18 +143,18 @@ struct SettingView: View {
                         }
                     }
                 } header: {
-                    Text("Feedback")
+                    Text(NSLocalizedString("Feedback", comment: ""))
                 }
             }
             
             VStack {
                 Image(systemName: "exclamationmark.shield")
-                Text("App version: 1.1.7")
+                Text(NSLocalizedString("App version: 1.1.1", comment: ""))
             }
             .font(.caption2).bold()
             .padding()
         }
-        .navigationTitle("Settings")
+        .navigationTitle(NSLocalizedString("Settings", comment: ""))
         .scrollContentBackground(.hidden)
         .background(Color("colorBG"))
         .onAppear {

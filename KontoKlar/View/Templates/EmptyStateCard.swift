@@ -10,22 +10,22 @@ struct EmptyStateCard: View {
         var messageLine1: String {
             switch self {
             case .homeCategoryStripEmpty, .transactionsListEmpty:
-                return "The list of transactions is currently empty,"
+                return NSLocalizedString("The list of transactions is currently empty,", comment: "")
             case .categoriesSettingsListEmpty:
-                return "The list of categories is currently empty,"
+                return NSLocalizedString("The list of categories is currently empty,", comment: "")
             case .pickerNoCategories:
-                return "There are currently no categories."
+                return NSLocalizedString("There are currently no categories.", comment: "")
             }
         }
 
         var messageLine2: String {
             switch self {
             case .homeCategoryStripEmpty, .transactionsListEmpty:
-                return "Please add transaction."
+                return NSLocalizedString("Please add transaction.", comment: "")
             case .categoriesSettingsListEmpty:
-                return "Please add category."
+                return NSLocalizedString("Please add category.", comment: "")
             case .pickerNoCategories:
-                return "Please add."
+                return NSLocalizedString("Please add.", comment: "")
             }
         }
 
@@ -47,7 +47,7 @@ struct EmptyStateCard: View {
                     .resizable()
                     .frame(width: 25, height: 25)
                 Spacer()
-                Text("KontoKlar")
+                Text(NSLocalizedString("KontoKlar", comment: ""))
                     .foregroundColor(.gray).bold()
                     .font(.title)
                 Spacer(minLength: 20)

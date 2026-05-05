@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0000000000000000000001 /* de.lproj/Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE0000000000000000000002 /* de.lproj/Localizable.strings */; };
+		DE0000000000000000000003 /* en.lproj/Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DE0000000000000000000004 /* en.lproj/Localizable.strings */; };
 		0FCF30632FA9E26A008A7AF0 /* AppModelContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCF30622FA9E26A008A7AF0 /* AppModelContainerFactory.swift */; };
 		0FCF30692FA9EF80008A7AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCF30682FA9EF80008A7AF0 /* Assets.xcassets */; };
 		0FCF306A2FA9EF80008A7AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCF30682FA9EF80008A7AF0 /* Assets.xcassets */; };
@@ -58,8 +60,7 @@
 		0FE2DF402FA9DFCA0072ABB6 /* PreviewModelContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2DEF32FA9D69A0072ABB6 /* PreviewModelContainer.swift */; };
 		0FE2DF412FA9DFCA0072ABB6 /* PreviewRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2DEF62FA9D72A0072ABB6 /* PreviewRepositories.swift */; };
 		0FE2DF422FA9DFCA0072ABB6 /* Haptic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2DEF72FA9D7520072ABB6 /* Haptic.swift */; };
-		0FE2DF432FA9DFD10072ABB6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2DEF92FA9D7FE0072ABB6 /* Localizable.strings */; };
-		0FE2DF442FA9DFD10072ABB6 /* Localizable(English).strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FE2DEFA2FA9D8930072ABB6 /* Localizable(English).strings */; };
+		
 		10AB00000000000000000001 /* CategoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA00000000000000000001 /* CategoryStore.swift */; };
 		10AB00000000000000000002 /* TransactionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA00000000000000000002 /* TransactionStore.swift */; };
 		10AB00000000000000000003 /* DateRangeSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA00000000000000000003 /* DateRangeSelection.swift */; };
@@ -84,6 +85,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE0000000000000000000002 /* de.lproj/Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DE0000000000000000000004 /* en.lproj/Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0FCF30622FA9E26A008A7AF0 /* AppModelContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelContainerFactory.swift; sourceTree = "<group>"; };
 		0FCF30682FA9EF80008A7AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD325432FA8ADC1004F22FF /* KontoKlar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KontoKlar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,8 +140,7 @@
 		0FE2DEF52FA9D70B0072ABB6 /* PersistenceLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceLogger.swift; sourceTree = "<group>"; };
 		0FE2DEF62FA9D72A0072ABB6 /* PreviewRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewRepositories.swift; sourceTree = "<group>"; };
 		0FE2DEF72FA9D7520072ABB6 /* Haptic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptic.swift; sourceTree = "<group>"; };
-		0FE2DEF92FA9D7FE0072ABB6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		0FE2DEFA2FA9D8930072ABB6 /* Localizable(English).strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "Localizable(English).strings"; sourceTree = "<group>"; };
+		
 		10AA00000000000000000001 /* CategoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryStore.swift; sourceTree = "<group>"; };
 		10AA00000000000000000002 /* TransactionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStore.swift; sourceTree = "<group>"; };
 		10AA00000000000000000003 /* DateRangeSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeSelection.swift; sourceTree = "<group>"; };
@@ -354,8 +356,8 @@
 		0FD3258A2FA8D2F2004F22FF /* Localizable */ = {
 			isa = PBXGroup;
 			children = (
-				0FE2DEF92FA9D7FE0072ABB6 /* Localizable.strings */,
-				0FE2DEFA2FA9D8930072ABB6 /* Localizable(English).strings */,
+				DE0000000000000000000002 /* de.lproj/Localizable.strings */,
+				DE0000000000000000000004 /* en.lproj/Localizable.strings */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -522,6 +524,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
 				Base,
 			);
 			mainGroup = 0FD3253A2FA8ADC1004F22FF;
@@ -543,9 +546,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FE2DF432FA9DFD10072ABB6 /* Localizable.strings in Resources */,
+				DE0000000000000000000001 /* de.lproj/Localizable.strings in Resources */,
+				DE0000000000000000000003 /* en.lproj/Localizable.strings in Resources */,
 				0FCF306A2FA9EF80008A7AF0 /* Assets.xcassets in Resources */,
-				0FE2DF442FA9DFD10072ABB6 /* Localizable(English).strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

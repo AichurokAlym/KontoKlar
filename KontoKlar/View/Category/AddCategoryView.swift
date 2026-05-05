@@ -99,12 +99,12 @@ struct AddCategoryView: View {
             }
         }
         .background(Color("colorBG"))
-        .navigationBarTitle("Create a category", displayMode: .inline)
+        .navigationBarTitle(NSLocalizedString("Create a category", comment: ""), displayMode: .inline)
         .scrollDismissesKeyboard(.interactively)
         .toolbar {
             ToolbarItemGroup(placement: .keyboard) {
                 Spacer()
-                Button("Done") {
+                Button(NSLocalizedString("Done", comment: "")) {
                     nameIsFocused = false
                 }
             }
@@ -117,16 +117,16 @@ struct AddCategoryView: View {
                     }
                 } label: {
                     if vm.name.isEmpty {
-                        Text("Add")
+                        Text(NSLocalizedString("Add", comment: ""))
                             .foregroundColor(.gray)
                     } else {
-                        Text("Add")
+                        Text(NSLocalizedString("Add", comment: ""))
                     }
                 }
             }
         }
-        .alert("Пожалуйста введите название категории", isPresented: $vm.showAlert) {
-                Button("Okay", role: .cancel) {
+        .alert(NSLocalizedString("Please enter a category name", comment: ""), isPresented: $vm.showAlert) {
+                Button(NSLocalizedString("Okay", comment: ""), role: .cancel) {
             }
         }
         .alert(

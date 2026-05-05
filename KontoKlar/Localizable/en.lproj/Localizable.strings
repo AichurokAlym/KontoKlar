@@ -28,7 +28,6 @@
 "Back" = "Back";
 
 // AddCategoryView
-"Back" = "Back";
 "New" = "New";
 
 // AddCategory
@@ -38,13 +37,8 @@
 "Choose an icon:" = "Choose an icon:";
 "Choose color:" = "Choose color:";
 "Create a category" = "Create a category";
-"Back" = "Back";
-"Add" = "Add";
 
 // SettingView
-"Back" = "Back";
-"Settings" = "Settings";
-"Transactions" = "Transactions";
 "Categories" = "Categories";
 "Data" = "Data";
 "Community" = "Community";
@@ -54,19 +48,20 @@
 "Currency" = "Currency";
 "Vibration" = "Vibration";
 "App version: 1.1.5" = "App version: 1.1.5";
+"App version: 1.1.1" = "App version: 1.1.1";
 "Rounding numbers" = "Rounding numbers";
 
-//PreviewCard
-"Welcome" = "Welcome!";
-"The list of transactions is currently empty," = "The list of transactions is currently empty,";
-"please add transaction." = "please add transaction.";
+// PreviewCard
 "Welcome" = "Welcome";
+"Welcome!" = "Welcome!";
+"The list of transactions is currently empty," = "The list of transactions is currently empty.";
+"please add transaction." = "please add transaction.";
 "The list of categories is currently empty," = "The list of categories is currently empty,";
 "please add category." = "please add category.";
 "There are currently no categories." = "There are currently no categories.";
 "Please add." = "Please add.";
 
-// DefaultCategories
+// DefaultCategories (existing)
 "Car" = "Car";
 "Bank" = "Bank";
 "Business services" = "Business services";
@@ -92,21 +87,56 @@
 "Exchange" = "Exchange";
 "Dividends" = "Dividends";
 "Wage" = "Wage";
-"Present" = "Present";
 "Part time job" = "Part time job";
 "Interest on accounts" = "Interest on accounts";
+"Salary" = "Salary";
+"Groceries" = "Groceries";
+
+// DefaultCategories (German starter set keys - English values)
+"Rent / Mortgage" = "Rent / Mortgage";
+"Utilities" = "Utilities";
+"Internet & Mobile" = "Internet & Mobile";
+"Insurance" = "Insurance";
+"Subscriptions" = "Subscriptions";
+"Drugstore & Household" = "Drugstore & Household";
+"Public transport" = "Public transport";
+"Restaurants & Cafés" = "Restaurants & Cafés";
+"Uncategorized" = "Uncategorized";
+"Side job / Freelance" = "Side job / Freelance";
+"Government benefits" = "Government benefits";
+"Refunds" = "Refunds";
+"Other income" = "Other income";
+
+// CategoryType
+"Expense" = "Expense";
+"Income" = "Income";
 
 // WelcomeView
 "KontoKlar" = "KontoKlar";
-"Currency" = "Currency";
 "Initial application setup" = "Initial application setup:";
 "Basic categories" = "Basic categories";
 "Note: Enabling this feature will create base categories for expenses and income." = "Note: Enabling this feature will create base categories for expenses and income.";
 "Continue" = "Continue";
 
 // PickerCategoryView
-"Categories" = "Categories";
 "Create category" = "Create category";
+
+// Budget & Goals + Date range picker
+"Budget & Goals" = "Budget & Goals";
+"Monthly budget" = "Monthly budget";
+"Savings goal" = "Savings goal";
+"Start" = "Start";
+"End" = "End";
+"Custom range" = "Custom range";
+"Custom" = "Custom";
+"This week" = "Week";
+"This month" = "Month";
+"This year" = "Year";
+"Done" = "Done";
+"Type" = "Type";
+"New category" = "New category";
+"Category not found" = "Category not found";
+"Please enter a category name" = "Please enter a category name";
 
 // EditTransactionView
 "Editing" = "Editing";

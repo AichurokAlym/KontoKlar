@@ -109,7 +109,6 @@ struct WelcomeView: View {
             .background(Color(Colors.mainBG))
         }
         .onChange(of: selectedCurrency) { _, newCurrency in
-            // Сохраняем символ валюты при изменении выбора
             appVM.currencySymbol = newCurrency.symbol
             playFeedbackHaptic(appVM.selectedFeedbackHaptic)
         }
