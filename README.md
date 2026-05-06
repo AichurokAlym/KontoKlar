@@ -1,5 +1,8 @@
 # KontoKlar
 
+<img width="433" height="324" alt="Screenshot 2026-05-06 at 11 19 41" src="https://github.com/user-attachments/assets/01e553c8-8f82-42b9-b6e8-e8a36905e792" />
+
+
 KontoKlar ist eine persönliche Finanz-App (iOS) zum **Erfassen von Einnahmen und Ausgaben**, zum **Behalten des Überblicks über dein Budget** und zum **Verfolgen deiner Sparziele** – alles **lokal auf deinem Gerät**.
 
 ## Highlights
@@ -51,13 +54,3 @@ Danach kannst du Transaktionen hinzufügen und deine Ausgaben im Dashboard nach 
 
 Es sind Unit-Tests im Ordner `KontoKlarTests` vorhanden (z. B. Repositories/Stores).  
 Ausführen in Xcode: **Product → Test** (⌘U).
-
-## Screenshots
-<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-05-05 at 17 42 38" src="https://github.com/user-attachments/assets/2f9da02e-6556-4ceb-92fd-41988592bcde" />
-<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-05-05 at 17 42 14" src="https://github.com/user-attachments/assets/db57bfa6-0dcb-46bd-b431-26418d3c13ed" />
-<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 17 - 2026-05-05 at 17 32 56" src="https://github.com/user-attachments/assets/a0e46a9d-4a25-4e21-a89a-bd89b0cc2ed0" />
-
-
-## Lizenz
-
-Noch keine Lizenzdatei hinterlegt. Falls du das Projekt veröffentlichen möchtest, füge z. B. eine `LICENSE` (MIT/Apache-2.0/etc.) hinzu.
